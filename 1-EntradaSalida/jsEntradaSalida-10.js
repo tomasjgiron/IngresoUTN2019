@@ -8,11 +8,13 @@ function MostrarDescuento()
     var resultado;
     var descuento;
 
-    importe = parseInt(document.getElementById("importe").value);
+    importe = parseFloat(document.getElementById("importe").value);
 
     descuento = (importe*25) / 100;
 
     resultado = importe - descuento;
 
-    document.getElementById("resultado").value = resultado;
+    document.getElementById("resultado").value = resultado.toFixed(2);
+
+    alert("El descuento es de $" + descuento.toFixed(2));
 }

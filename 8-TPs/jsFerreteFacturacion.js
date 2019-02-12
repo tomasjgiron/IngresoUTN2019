@@ -10,13 +10,13 @@ var precio2;
 var precio3;
 var suma;
 
-precio1 = parseInt(document.getElementById("PrecioUno").value);
-precio2 = parseInt(document.getElementById("PrecioDos").value);
-precio3 = parseInt(document.getElementById("PrecioTres").value);
+precio1 = parseFloat(document.getElementById("PrecioUno").value);
+precio2 = parseFloat(document.getElementById("PrecioDos").value);
+precio3 = parseFloat(document.getElementById("PrecioTres").value);
 
 suma = precio1 + precio2 + precio3;
 
-alert(suma);
+alert(suma.toFixed(2));
 }
 function Promedio () 
 {
@@ -25,13 +25,13 @@ var precio2;
 var precio3;
 var promedio;
 
-precio1 = parseInt(document.getElementById("PrecioUno").value);
-precio2 = parseInt(document.getElementById("PrecioDos").value);
-precio3 = parseInt(document.getElementById("PrecioTres").value);
+precio1 = parseFloat(document.getElementById("PrecioUno").value);
+precio2 = parseFloat(document.getElementById("PrecioDos").value);
+precio3 = parseFloat(document.getElementById("PrecioTres").value);
 
 promedio = (precio1 + precio2 + precio3) / 3;
 
-alert(promedio);
+alert(promedio.toFixed(2));
 }
 function PrecioFinal () 
 {
@@ -42,13 +42,13 @@ var final1;
 var final2;
 var final3;
 
-precio1 = parseInt(document.getElementById("PrecioUno").value);
-precio2 = parseInt(document.getElementById("PrecioDos").value);
-precio3 = parseInt(document.getElementById("PrecioTres").value);
+precio1 = parseFloat(document.getElementById("PrecioUno").value);
+precio2 = parseFloat(document.getElementById("PrecioDos").value);
+precio3 = parseFloat(document.getElementById("PrecioTres").value);
 
 final1 = precio1 + (precio1*21) / 100;
 final2 = precio2 + (precio2*21) / 100;
 final3 = precio3 + (precio3*21) / 100;
 
-alert(final1 +" "+final2 +" "+final3);
+alert(final1.toFixed(2) +" "+final2.toFixed(2) +" "+final3.toFixed(2));
 }
